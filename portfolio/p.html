@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sandhiya Kannan</title>
+    <link rel="stylesheet" href="p.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Sandhiya Kannan</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="l-main">
+        <!-- Home Section -->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Sandhiya Kannan</span><br>Web Developer</h1>
+                <a href="#contact" class="button">Contact</a>
+            </div>
+            <div class="home__social">
+                <a href="https://github.com/SandhiyaKannan12" class="home__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://linkedin.com/in/sandhiya-kannan-351423269" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <div class="home__img">
+                <img src="assets/img/perfil.png" alt="Profile Image">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about__container bd-grid">
+                <div class="about__info">
+                    <h2 class="about__subtitle">I am Sandhiya Kannan</h2>
+                    <p class="about__text">I am a BTech graduate in Information Technology from Karpagam Institute of Technology with a CGPA of 8.2. I have a strong background in web development, UI/UX design, and have completed internships focusing on mobile app development and IoT solutions.</p>
+                    <p class="about__text">Based in Coimbatore, India, I have experience in developing hybrid mobile apps and IoT solutions. I am skilled in Java, HTML, CSS, JavaScript, Python, and have a passion for continuous learning and adapting to new technologies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Technical Skills</h2>
+                    <p class="skills__text">My technical expertise includes:</p>
+                    <ul class="skills__list">
+                        <li>Data Structures and Algorithms</li>
+                        <li>UI/UX Design</li>
+                        <li>MERN Stack</li>
+                    </ul>
+                    <h2 class="skills__subtitle">Programming Languages</h2>
+                    <ul class="skills__list">
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>CSS</li>
+                    </ul>
+                    <h2 class="skills__subtitle">Soft Skills</h2>
+                    <ul class="skills__list">
+                        <li>Proficient Communication</li>
+                        <li>People Management</li>
+                        <li>Versatile Learner</li>
+                        <li>Adaptability</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/img/skills.jpg" alt="Skills Image" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects__container bd-grid">
+                <div class="project">
+                    <h3 class="project__title">Online Integrated Project Platform</h3>
+                    <p class="project__description">A platform for students to download various types of projects based on their domain of interest. Includes project discovery and team connections.</p>
+                    <p class="project__tech">Technologies Used: MERN Stack</p>
+                    <p class="project__tools">Tools Used: Tfidf, GridFS</p>
+                </div>
+                <div class="project">
+                    <h3 class="project__title">Expense Tracker</h3>
+                    <p class="project__description">An app for tracking daily expenses and managing budgets effectively.</p>
+                    <p class="project__tech">Technologies Used: MERN Stack</p>
+                </div>
+                <div class="project">
+                    <h3 class="project__title">Movie Recommendation App</h3>
+                    <p class="project__description">A site to discover movies based on user preferences, including personalized recommendations, movie info, reviews, and ratings.</p>
+                    <p class="project__tech">Technologies Used: MERN Stack</p>
+                </div>
+                <div class="project">
+                    <h3 class="project__title">Transaction Dashboard</h3>
+                    <p class="project__description">A web application for managing and visualizing transaction data, including viewing, searching, and paginating transactions, with statistical summaries and chart visualizations.</p>
+                    <p class="project__tech">Technologies Used: MERN Stack</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="email" placeholder="Email" class="contact__input">
+                    <textarea placeholder="Message" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="submit" value="Send" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p class="footer__title">Sandhiya Kannan</p>
+        <div class="footer__social">
+            <a href="https://github.com/SandhiyaKannan12" class="footer__icon" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://linkedin.com/in/sandhiya-kannan-351423269" class="footer__icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Sandhiya Kannan. All rights reserved.</p>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

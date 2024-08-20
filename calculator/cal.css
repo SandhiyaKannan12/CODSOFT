@@ -1,0 +1,97 @@
+/* Basic styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('img .jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f0f4f8; /* Light grayish background color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjust height as needed */
+    width: 100%;
+    max-width: 360px; /* Limit the width for better appearance */
+    background-color: rgba(16, 15, 15, 0.95); /* Slightly opaque white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px; /* Add padding to ensure content isn't cut off */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.calculator {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    background-color: #eaeaea; /* Light gray background for the display */
+    color: #333;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #ccc;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.8em;
+    color: #444;
+    background-color: #f2f2f2; /* Light gray button background */
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn.operator {
+    background-color: #ffb84d; /* Light orange for operator buttons */
+    color: #fff;
+}
+
+.btn.operator:hover {
+    background-color: #ff9f00; /* Darker orange on hover */
+}
+
+.equal {
+    background-color: #4caf50; /* Green for the "=" button */
+    color: #fff;
+    grid-column: span 2; /* Make the "=" button span two columns */
+}
+
+.equal:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.clear {
+    background-color: #f44336; /* Red for the "C" button */
+    color: #fff;
+    grid-column: span 4; /* Make the "C" button span four columns */
+}
+
+.clear:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
